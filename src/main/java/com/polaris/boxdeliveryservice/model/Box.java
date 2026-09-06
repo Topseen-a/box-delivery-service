@@ -20,6 +20,8 @@ import java.util.List;
 @NoArgsConstructor
 public class Box {
 
+    public static final int MIN_BATTERY_FOR_LOADING = 25;
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
