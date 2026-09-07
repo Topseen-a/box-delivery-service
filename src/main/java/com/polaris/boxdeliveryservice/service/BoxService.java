@@ -70,8 +70,7 @@ public class BoxService {
     @Transactional(readOnly = true)
     public List<Item> getItemsForBox(Long boxId) {
         getBoxOrThrow(boxId);
-        return itemRepository.findBoxId(boxId);
-
+        return itemRepository.findByBoxId(boxId);
     }
 
     @Transactional(readOnly = true)

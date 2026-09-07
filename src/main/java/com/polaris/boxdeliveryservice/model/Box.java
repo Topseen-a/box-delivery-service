@@ -1,5 +1,6 @@
 package com.polaris.boxdeliveryservice.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.DecimalMax;
 import jakarta.validation.constraints.DecimalMin;
@@ -47,6 +48,7 @@ public class Box {
     private BoxState state = BoxState.IDLE;
 
     @OneToMany(mappedBy = "box", cascade = CascadeType.ALL,  orphanRemoval = true, fetch = FetchType.LAZY)
+    @JsonIgnore
     private List<Item> items = new ArrayList<>();
 
     public BigDecimal totalLoadedWeight() {
