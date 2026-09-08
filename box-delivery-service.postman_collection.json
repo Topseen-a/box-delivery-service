@@ -1,0 +1,655 @@
+{
+  "info": {
+    "_postman_id": "036376c7-5660-4b76-93ca-fc63845b58e3",
+    "name": "box-delivery-service",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53063371",
+    "_collection_link": "https://go.postman.co/collection/53063371-036376c7-5660-4b76-93ca-fc63845b58e3?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "List available boxes request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/boxes/available",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "boxes",
+            "available"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "List available boxes response",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/boxes/available",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "boxes",
+                "available"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 07 Sep 2026 09:56:15 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"batteryCapacity\": 80,\n        \"id\": 1,\n        \"state\": \"IDLE\",\n        \"txref\": \"BOX-0001\",\n        \"weightLimit\": 500\n    },\n    {\n        \"batteryCapacity\": 90,\n        \"id\": 4,\n        \"state\": \"IDLE\",\n        \"txref\": \"BOX-0004\",\n        \"weightLimit\": 200\n    },\n    {\n        \"batteryCapacity\": 25,\n        \"id\": 5,\n        \"state\": \"IDLE\",\n        \"txref\": \"BOX-0005\",\n        \"weightLimit\": 500\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Get items for a box request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/boxes/3/items",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "boxes",
+            "3",
+            "items"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Get items for a box response",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/boxes/3/items",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "boxes",
+                "3",
+                "items"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 07 Sep 2026 09:57:16 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "[\n    {\n        \"code\": \"MED_001\",\n        \"id\": 1,\n        \"name\": \"First_Aid-Kit\",\n        \"weight\": 150\n    },\n    {\n        \"code\": \"WTR_002\",\n        \"id\": 2,\n        \"name\": \"Water_Bottle\",\n        \"weight\": 250\n    }\n]"
+        }
+      ]
+    },
+    {
+      "name": "Check battery level for a box request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/boxes/1/battery",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "boxes",
+            "1",
+            "battery"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Check battery level for a box response",
+          "originalRequest": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "http://localhost:8080/api/boxes/1/battery",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "boxes",
+                "1",
+                "battery"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 07 Sep 2026 09:58:19 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"boxId\": 1,\n    \"batteryCapacity\": 80\n}"
+        }
+      ]
+    },
+    {
+      "name": "Create a box request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"txref\": \"BOX-0006\",\n    \"weightLimit\": 400,\n    \"batteryCapacity\": 70\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/boxes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "boxes"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Create a box response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"txref\": \"BOX-0006\",\n    \"weightLimit\": 400,\n    \"batteryCapacity\": 70\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/boxes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "boxes"
+              ]
+            }
+          },
+          "status": "Created",
+          "code": 201,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 07 Sep 2026 09:59:34 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"batteryCapacity\": 70,\n    \"id\": 6,\n    \"state\": \"IDLE\",\n    \"txref\": \"BOX-0006\",\n    \"weightLimit\": 400\n}"
+        }
+      ]
+    },
+    {
+      "name": "Load a box request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n    {\n        \"name\": \"Test_Item\",\n        \"weight\": 100,\n        \"code\": \"TST_001\"\n    }\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/boxes/1/load",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "boxes",
+            "1",
+            "load"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Load a box response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n    {\n        \"name\": \"Test_Item\",\n        \"weight\": 100,\n        \"code\": \"TST_001\"\n    }\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/boxes/1/load",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "boxes",
+                "1",
+                "load"
+              ]
+            }
+          },
+          "status": "OK",
+          "code": 200,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 07 Sep 2026 10:01:38 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"batteryCapacity\": 80,\n    \"id\": 1,\n    \"state\": \"LOADED\",\n    \"txref\": \"BOX-0001\",\n    \"weightLimit\": 500\n}"
+        }
+      ]
+    },
+    {
+      "name": "Load a box with low battery request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n    {\n        \"name\": \"Test_Item\",\n        \"weight\": 50,\n        \"code\": \"TST_002\"\n    }\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/boxes/2/load",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "boxes",
+            "2",
+            "load"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Load a box with low battery response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n    {\n        \"name\": \"Test_Item\",\n        \"weight\": 50,\n        \"code\": \"TST_002\"\n    }\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/boxes/2/load",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "boxes",
+                "2",
+                "load"
+              ]
+            }
+          },
+          "status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+          "code": 422,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 07 Sep 2026 10:03:39 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"timestamp\": \"2026-09-07T10:03:39.741232716Z\",\n    \"status\": 422,\n    \"error\": \"Unprocessable Content\",\n    \"message\": \"Box 2 battery is 15%, minimum 25% required to enter LOADING state\",\n    \"details\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "Load a box with weight limit exceeded request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "[\n    {\n        \"name\": \"Heavy_Item\",\n        \"weight\": 999,\n        \"code\": \"HVY_001\"\n    }\n]",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/boxes/4/load",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "boxes",
+            "4",
+            "load"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Load a box with weight limit exceeded response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "[\n    {\n        \"name\": \"Heavy_Item\",\n        \"weight\": 999,\n        \"code\": \"HVY_001\"\n    }\n]",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/boxes/4/load",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "boxes",
+                "4",
+                "load"
+              ]
+            }
+          },
+          "status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+          "code": 422,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 07 Sep 2026 10:05:31 GMT"
+            },
+            {
+              "key": "Keep-Alive",
+              "value": "timeout=60"
+            },
+            {
+              "key": "Connection",
+              "value": "keep-alive"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"timestamp\": \"2026-09-07T10:05:31.483854263Z\",\n    \"status\": 422,\n    \"error\": \"Unprocessable Content\",\n    \"message\": \"Box 4 cannot carry 999g — weight limit is 200.00g\",\n    \"details\": null\n}"
+        }
+      ]
+    },
+    {
+      "name": "Validating bad input request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"txref\": \"BOX-0007\",\n    \"weightLimit\": 600,\n    \"batteryCapacity\": 50\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/boxes",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "boxes"
+          ]
+        }
+      },
+      "response": [
+        {
+          "name": "Validating bad input response",
+          "originalRequest": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"txref\": \"BOX-0007\",\n    \"weightLimit\": 600,\n    \"batteryCapacity\": 50\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/api/boxes",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "api",
+                "boxes"
+              ]
+            }
+          },
+          "status": "Bad Request",
+          "code": 400,
+          "_postman_previewlanguage": null,
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            },
+            {
+              "key": "Transfer-Encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "Date",
+              "value": "Mon, 07 Sep 2026 10:07:28 GMT"
+            },
+            {
+              "key": "Connection",
+              "value": "close"
+            }
+          ],
+          "cookie": [],
+          "body": "{\n    \"timestamp\": \"2026-09-07T10:07:28.082668301Z\",\n    \"status\": 400,\n    \"error\": \"Bad Request\",\n    \"message\": \"Validation failed\",\n    \"details\": [\n        \"must be less than or equal to 500\"\n    ]\n}"
+        }
+      ]
+    }
+  ]
+}
