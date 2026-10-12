@@ -1,7 +1,6 @@
 # Box Delivery Service
 
-A REST API for managing delivery boxes and the items loaded into them, built as a take-home
-assessment for Polaris Digitech Limited.
+A RESTful API for managing delivery boxes, tracking their contents, and organizing the items loaded into each box.
 
 A **Box** represents a small autonomous delivery unit with a battery and a weight capacity.
 An **Item** is something placed inside a box for delivery. The service allows creating boxes,
