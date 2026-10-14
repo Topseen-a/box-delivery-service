@@ -147,3 +147,7 @@ Per the task's invitation to document design assumptions:
 
 - A box cannot be loaded with more weight than its `weightLimit` (500g max per box).
 - A box cannot enter `LOADING` state if its battery is below 25%.
+
+## Author
+
+Built by [Temitope](https://github.com/Topseen-a).
